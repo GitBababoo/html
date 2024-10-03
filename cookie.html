@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Consent</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="cookie.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="CookiePolicy" class="CookiePolicy CookiePolicyModal">
+  <div class="CookiePolicy_content">
+    <img src="../icon-cookie.png" alt="Cookie Icon" class="CookiePolicy_icon">
+    <div>
+      <p class="CookiePolicy_title CookiePolicy_text">We use cookie files</p>
+      <p class="CookiePolicy_text">We activate all cookies by default to ensure the proper functioning of our website, advertisement, and analytics. <a href="#" class="underline text-blue-400">Privacy Policy</a></p>
+    </div>
+  </div>
+  <div class="CookiePolicy_actions">
+    <button id="CookiePopupSettings" class="CookiePolicy_button">Settings</button>
+    <button class="CookiePolicy_button CookiePolicy_button--blue AcceptAllCookies">Accept All</button>
+  </div>
+
+  <!-- Cookie Settings Info -->
+  <div id="CookiePopupInfo" class="CookiePopup__info">
+    <div class="CookiePopup__infoInner">
+      <p class="CookiePopup__title CookiePolicy__text">Cookie Files Settings</p>
+      <p class="CookiePopup__subtitle CookiePolicy__text">About cookie files</p>
+      <p class="CookiePopup__describe CookiePolicy__text">
+        We use cookies to provide you with access to all website features as well as to analyze, personalize, and improve user experience. In this block, you can change the cookie files settings or accept all of them by default. In order to get a better understanding of what cookie files are and how they are used on our website, please read our <a href="https://www.templatemonster.com/privacy-policy.php" class="CookiePolicy__link CookiePolicy__text" target="_blank">privacy policy</a>.
+      </p>
+    </div>
+    <div class="CookiePopup__options">
+      <div id="option1" class="CookiePopup__option">
+        <p class="CookiePopup__optionTitle CookiePolicy__text">
+          <i id="optionArrow1" class="CookiePopup__arrow CookiePopup__arrow--up"></i>
+          Necessary cookie files
+        </p>
+        <label role="checkbox" aria-checked="true">
+          <input class="CookiePopup__checkboxDefault" disabled="true" checked="true" type="checkbox" id="check1">
+          <i id="visualCheck1" class="CookiePopup__checkbox CookiePopup__checkbox--disabled"></i>
+        </label>
+        <p id="description1" class="CookiePopup__optionDescribe CookiePolicy__text">
+          The purpose of these cookies is to deliver the requested service, application, or resource. Any of your requests cannot be done properly without these cookies.
+        </p>
+      </div>
+
+      <div id="option2" class="CookiePopup__option">
+        <p class="CookiePopup__optionTitle CookiePolicy__text">
+          <i id="optionArrow2" class="CookiePopup__arrow CookiePopup__arrow--up"></i>
+          Analytical cookie files
+        </p>
+        <label role="checkbox" aria-checked="true">
+          <input class="CookiePopup__checkboxDefault" type="checkbox" id="check2" checked="true">
+          <i class="CookiePopup__checkbox CookiePopup__checkbox--clickable"></i>
+        </label>
+        <p id="description2" class="CookiePopup__optionDescribe CookiePolicy__text">
+          The purpose of these cookies is to provide quantitative data on user interactions with our website.
+        </p>
+      </div>
+
+      <div id="option3" class="CookiePopup__option">
+        <p class="CookiePopup__optionTitle CookiePolicy__text">
+          <i id="optionArrow3" class="CookiePopup__arrow CookiePopup__arrow--up"></i>
+          Advertising cookie files
+        </p>
+        <label role="checkbox" aria-checked="true">
+          <input class="CookiePopup__checkboxDefault" type="checkbox" id="check3" checked="true">
+          <i class="CookiePopup__checkbox CookiePopup__checkbox--clickable"></i>
+        </label>
+        <p id="description3" class="CookiePopup__optionDescribe CookiePolicy__text">
+          These cookies are set by our advertising partners in order to provide behavioral advertising and remarketing analytics.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="cookie.js"></script>
+</html>
